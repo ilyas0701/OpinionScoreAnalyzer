@@ -1,0 +1,108 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    background: #F7FCFF;
+}
+
+.container {
+    background: white;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    box-shadow: 0px 0px 24px -3px rgba(34, 60, 80, 0.14);
+    padding: 0 25px 0 25px;
+}
+
+.main-text-header h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 42px;
+}
+
+.par-bold {
+    font-size: 22px;
+    font-weight: 700;
+}
+.par-def {
+    font-size: 22px;
+}
+
+.ans-style {
+    font-size: 20px;
+}
+
+
+label {
+    display: flex;
+}
+input {
+    width: 18px;
+    margin-right: 10px;
+}
+.custom-radio__label {
+    font-size: 20px;
+}
+.full-input {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.custom-button {
+    display: inline-block;
+    width: auto;
+    padding: 10px 20px; /* Регулировка отступов внутри кнопки */
+    font-size: 16px;
+    color: #fff; /* Цвет текста */
+    background-color: #4CAF50; /* Цвет фона кнопки */
+    border: none;
+    border-radius: 5px; /* Закругление углов */
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+.custom-button:hover {
+    background-color: #45a049; /* Изменение цвета фона при наведении */
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}
+

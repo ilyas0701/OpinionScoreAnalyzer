@@ -1,0 +1,48 @@
+﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model List<OpinionScoreAnalyzer.Models.QuestionAndAnswer>
+
+<div class="main-text-header">
+    <h1>Рівень цілеспрямованості</h1>
+    <p class="par-bold">Відомо, що цілеспрямованість - це здатність організувати свої дії для досягнення поставленої мети. Щоб оцінити власний рівень цілеспрямованості, можна пройти спеціальний тест.</p>
+    <p class="par-def">Методика визначення рівня цілеспрямованості містить 13 питань. Оберіть один з варіантів відповідей: «так», «не зовсім» (або не завжди, інколи, іноді, не дуже), «ні» - та отримайте результат за сумою відповідних балів.</p>
+</div>
+
+<form asp-controller="Home" asp-action="ProcessAnswer" method="post" id="myForm">
+    @for (int i = 0; i < Model.Count; i++)
+    {
+        <h4>@(i + 1). @Model[i].Question</h4>
+        <div class="custom-radio">
+            <label>
+                <input type="radio" name="answers[@i]" value="1">
+                <div class="custom-radio__label">
+                    @Model[i].Score1Description
+                </div>
+            </label>
+        </div>
+        
+        <div class="custom-radio">
+            <label>
+                <input type="radio" name="answers[@i]" value="2">
+                <div class="custom-radio__label">
+                    @Model[i].Score2Description
+                </div>
+            </label>
+        </div>
+        
+        <div class="custom-radio">
+            <label>
+                <input type="radio" name="answers[@i]" value="3">
+                <div class="custom-radio__label">
+                    @Model[i].Score3Description
+                </div>
+            </label>
+        </div>
+
+        <br>
+    }
+    <div class="full-input">
+        <input type="submit" value="Submit" class="custom-button" id="submitButton">
+    </div>
+</form>
+
+
